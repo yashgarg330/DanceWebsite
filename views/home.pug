@@ -1,0 +1,42 @@
+extends base.pug
+block scripts
+    script
+        include  ../static/index.js 
+block style
+    style
+        include ../static/style.css
+block content
+    section#introSection 
+        div Welcome to Garg's Dance Academy
+        div.small Eat Sleep Dance Repeat..
+    section#missionSection 
+        h2 Our Mission 
+        div.box
+            div.card
+                p Expertise Teaching
+                div.card-box
+                    div.card-img
+                        img(src="static/img/1.png") 
+                div.card-content
+                    | voluptates laborum, eos eveniet veritatis quos accusantium modi fuga tenetur cum, excepturi corporis velit.        
+            div.card
+                p Dance to Express
+                div.card-box
+                    div.card-img
+                        img(src="static/img/2.png") 
+                div.card-content
+                    | voluptates laborum, eos eveniet veritatis quos accusantium modi fuga tenetur cum, excepturi corporis velit.   
+            div.card
+                p Any Body Can Dance 
+                div.card-box
+                    div.card-img
+                        img(src="static/img/3.png") 
+                div.card-content
+                    | voluptates laborum, eos eveniet veritatis quos accusantium modi fuga tenetur cum, excepturi corporis velit.  
+    section#sponsersSection 
+        h2 Our Sponsers 
+        #sponser
+            img(src="static/img/logo1.png", alt="Sponser-image", class = "spImage")
+            img(src="static/img/logo2.png", alt="Sponser-image", class = "spImage")
+            img(src="static/img/logo3.png", alt="Sponser-image", class = "spImage")
+            img(src="static/img/logo4.png", alt="Sponser-image", class = "spImage")       

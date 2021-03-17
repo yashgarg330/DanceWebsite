@@ -1,0 +1,60 @@
+doctype html
+html 
+    head 
+        title Garg Dance Academy 
+        style
+            include ../static/style.css
+    body 
+        nav#navBar 
+            ul 
+                div#logo
+                    img(src="/static/img/logo.png")
+                    | GDA
+                li #[a(href = '/') Home]
+                li #[a(href = '/') About]
+                li #[a(href = '/') Services]
+                li #[a(href = '/') Class Info]
+                li #[a(href = '/') Contact Us]
+
+        section#introSection 
+            div Welcome to Garg's Dance Academy
+            div.small Eat Sleep Dance Repeat..
+        section#missionSection 
+            h2 Our Mission 
+            div.box
+                div.card
+                    p Expertise Teaching
+                    div.card-box
+                        div.card-img
+                            img(src="static/img/1.png") 
+                    div.card-content
+                        | voluptates laborum, eos eveniet veritatis quos accusantium modi fuga tenetur cum, excepturi corporis velit.        
+                div.card
+                    p Dance to Express
+                    div.card-box
+                        div.card-img
+                            img(src="static/img/2.png") 
+                    div.card-content
+                        | voluptates laborum, eos eveniet veritatis quos accusantium modi fuga tenetur cum, excepturi corporis velit.   
+                div.card
+                    p Any Body Can Dance 
+                    div.card-box
+                        div.card-img
+                            img(src="static/img/3.png") 
+                    div.card-content
+                        | voluptates laborum, eos eveniet veritatis quos accusantium modi fuga tenetur cum, excepturi corporis velit.  
+        section#sponsersSection 
+            h2 Our Sponsers 
+            #sponser
+                img(src="static/img/logo1.png", alt="Sponser-image", class = "spImage")
+                img(src="static/img/logo2.png", alt="Sponser-image", class = "spImage")
+                img(src="static/img/logo3.png", alt="Sponser-image", class = "spImage")
+                img(src="static/img/logo4.png", alt="Sponser-image", class = "spImage")
+        footer#footer 
+            | Copyright © 2021 GargDanceAcademy.com | All rights reserved 
+
+        script
+            include  ../static/index.js
+
+
+
